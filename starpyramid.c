@@ -3,7 +3,7 @@ int main(){
     int n;
     printf("Enter no of lines :");
     scanf("%d",&n);
-    int nsp=3;
+    int nsp=n-1;
     int nst=1;
     for(int i=1; i<=n; i++){
         for(int k=1; k<=nsp; k++)
