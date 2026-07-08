@@ -1,21 +1,24 @@
 #include<stdio.h>
-void rectangle(int a , int b){
-    for(int i=1; i<=a; i++){
-        for(int j=1; j<=a; j++){
-            printf("*");
-        }
-        printf("\n");
-    }
-    return;
-}
 int main(){
-    int n,r;
+    int n;
     printf("Enter n :");
     scanf("%d",&n);
-     printf("Enter r :");
-    scanf("%d",&r);
-    rectangle(n,r);
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            printf("%d ",j);
+        }
+        printf("\n");
+        }
+        for(int i=n-1; i>=1; i--){
+            for(int j=1; j<=i; j++){
+                printf("%d ",j);
+            }
+             printf("\n");
+        }
+       
+        return 0;
+        
+    }
+        
+
     
-    
-    return 0;
-}
