@@ -1,13 +1,15 @@
-# include <stdio.h>
+#include<stdio.h>
 int main(){
-    int n;
-    printf("Enter number of rows :");
-    scanf("%d",&n);
-    for(int i=1; i<=n; i++){
-        for(int j=1; j<=i; j++){
-            printf("* ");
-        }
-        printf("\n");
-    }
+    int a;
+    printf("Enter a :");
+    scanf("%d",&a);
+    int b;
+    printf("Enter b :");
+    scanf("%d",&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("The value of a is %d \n",a);
+    printf("The value of b is %d",b);
     return 0;
 }
